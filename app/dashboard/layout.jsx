@@ -4,15 +4,37 @@ import Navbar from '../ui/dashboard/navbar/navbar'
 import styles from '../ui/dashboard/dashboard.module.css'
 const Layout = ({ children }) => {
   return (
-    <div className={styles.container}>
-      <div style={styles.menu}>
+    <div
+      className={{
+        display: 'flex'
+      }}
+    >
+      <div
+        style={{
+          flex: 1,
+          backgroundColor: '#182237'
+        }}
+      >
         <Sidebar />
       </div>
-      <div className={styles.content}>
+      <div
+        className={{
+          flex: 4
+        }}
+      >
         <Navbar />
         {children}
       </div>
     </div>
+    // <div className={styles.container}>
+    //   <div style={styles.menu}>
+    //     <Sidebar />
+    //   </div>
+    //   <div className={styles.content}>
+    //     <Navbar />
+    //     {children}
+    //   </div>
+    // </div>
   )
 }
 
