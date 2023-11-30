@@ -5,7 +5,7 @@ import styles from '../ui/dashboard/dashboard.module.css'
 const Layout = ({ children }) => {
   return (
     <div className={styles.container}>
-      <div style={styles.menu}>
+      <div className={styles.menu}>
         <Sidebar />
       </div>
       <div className={styles.content}>
